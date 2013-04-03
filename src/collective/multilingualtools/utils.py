@@ -202,8 +202,15 @@ class DXContentHelper(object):
             if behavior_instance is not None:
                 behavior_interface = behavior_instance.interface
             if behavior_interface is not None:
-                value = getattr(
-                    behavior_interface(self.context), field_name, _marker)
+                try:
+                    adapted = behavior_interface(self.context)
+                except TypeError:
+                    warnings.append(
+                        u'Wrong interface given for field "%s", could not '
+                        u'adapt item to %s' % (field_name, behavior_name))
+                    continue
+                else:
+                    value = getattr(adapted, field_name, _marker)
             else:
                 value = getattr(self.context, field_name, _marker)
             if IRelationValue.providedBy(value):
