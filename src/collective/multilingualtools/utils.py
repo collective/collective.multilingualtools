@@ -143,7 +143,10 @@ class DXContentHelper(object):
 
     def __init__(self, context):
         self.context = context
-        self.language = ILanguage(self.context).get_language()
+        if ITranslatable.providedBy(context):
+            self.language = ILanguage(context).get_language()
+        else:
+            self.language = ""
         self.fallbacks = [self.language.split('-')[0]]
 
     def get_translatable_fields(self):
