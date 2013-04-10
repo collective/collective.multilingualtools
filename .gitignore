@@ -8,6 +8,8 @@
 *.egg-info
 dist
 build
+include
+local
 eggs
 parts
 bin
