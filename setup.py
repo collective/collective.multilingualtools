@@ -24,7 +24,7 @@ long_description = (
 
 install_requires = [
         'setuptools',
-        'plone.app.multilingual',
+        'plone.app.multilingual[dexterity, archetypes]',
     ]
 
 
@@ -56,7 +56,11 @@ setup(name='collective.multilingualtools',
     include_package_data=True,
     zip_safe=False,
     install_requires=install_requires,
-    extras_require=dict(test=['plone.app.testing']),
+    extras_require={
+        'test': [
+            'plone.app.testing>=4.2.2',
+        ]
+    },
     entry_points="""
     [z3c.autoinclude.plugin]
     target = plone
