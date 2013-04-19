@@ -43,6 +43,16 @@ a News item into 3 languages:
 .. image:: https://raw.github.com/collective/collective.multilingualtools/master/docs/make_translations.png
 
 
+Dependencies
+============
+
+* Plone >= 4.2
+* plone.app.multilingual
+
+
+
+
+
 To do
 =====
 
