@@ -163,8 +163,6 @@ To test this, we set the title using a message ID available in the plone po file
     'Limit'
     >>> doc_da.Title() == 'Begrænsning'.decode(encoding).encode(encoding)
     True
-    >>> doc_da.Title()
-    'wus'
 
 
 Again, the same works for the description. We use a different translation domain this time:
