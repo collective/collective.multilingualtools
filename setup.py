@@ -9,7 +9,7 @@ from setuptools import setup, find_packages
 def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
 
-version = '0.1'
+version = '0.1dev0'
 
 long_description = (
     read('README.rst')
@@ -45,7 +45,7 @@ setup(name='collective.multilingualtools',
     "License :: OSI Approved :: European Union Public Licence "\
         "1.1 (EUPL 1.1)",
     ],
-    keywords='linguatools internationalization pam',
+    keywords='translation multilingual internationalization',
     author='Syslab.com GmbH',
     author_email='thomas@syslab.com',
     url='',
