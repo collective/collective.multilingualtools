@@ -1,5 +1,5 @@
-collective.multilingualtools Changelog
-======================================
+Changelog
+=========
 
 0.1 (unreleased)
 ----------------

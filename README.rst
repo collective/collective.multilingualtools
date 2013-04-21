@@ -1,11 +1,18 @@
+collective.multilingualtools
+****************************
+
+
 .. contents::
 
 Introduction
 ============
 
-This package is WORK IN PROGRESS. It is based on the concepts of
-collective/slc.linguatools,
-but this package works with *plone.app.multilingual* and both with both *dexterity* and *archetypes*.
+Disclaimer: This package is WORK IN PROGRESS.
+
+Collective.multilingualtools is based on the concepts of
+collective/slc.linguatools, but this new package works with
+*plone.app.multilingual* and both with both *dexterity* and
+*archetypes*.
 
 Purpose
 -------
@@ -26,8 +33,6 @@ translations of an item at the same time, such as
 Also, there's an option to make a copy of any item to all available languages (or
 a subset), optionally copying individual attributes (title, description, tags, etc).
 
-As I said, WORK IN PROGRESS. Basic functionality is becoming stable, but documentation
-and good tests are not there yet.
 
 Interface
 ---------

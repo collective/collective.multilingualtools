@@ -14,9 +14,6 @@ version = '0.1dev0'
 long_description = (
     read('README.rst')
     + '\n' +
-    'Change history\n'
-    '**************\n'
-    + '\n' +
     read('docs/CHANGES.rst')
     + '\n' +
     read('docs/CONTRIBUTORS.rst')
