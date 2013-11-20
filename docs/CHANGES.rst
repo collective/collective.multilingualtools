@@ -4,8 +4,7 @@ Changelog
 0.1.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
-
+- JS Bugfix: don't rely on "jq" being defined [pysailor]
 
 0.1 (2013-04-21)
 ----------------
