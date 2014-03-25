@@ -7,3 +7,7 @@ recursive-include docs *
 
 global-exclude *.pyc
 global-exclude .DS_Store
+
+# added by check_manifest.py
+include *.py
+include buildout.cfg
