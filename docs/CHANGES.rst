@@ -4,8 +4,7 @@ Changelog
 0.1.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
-
+- Use generic IFolderish interface, not an Archetypes-specific one
 
 0.1.1 (2013-11-20)
 ------------------

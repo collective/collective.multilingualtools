@@ -6,7 +6,8 @@ import zope.component
 from Products.CMFCore.utils import getToolByName
 from Products.CMFCore.exceptions import ResourceLockedError
 from Products.Archetypes.utils import shasattr
-from Products.Archetypes.interfaces import IBaseContent, IBaseFolder
+from Products.Archetypes.interfaces import IBaseContent
+from Products.CMFCore.interfaces._content import IFolderish
 from Products.CMFPlone.utils import safe_unicode
 from collective.multilingualtools.interfaces import IContentHelper
 from collective.multilingualtools import HAS_DEXTERITY
@@ -502,7 +503,7 @@ def cut_and_paste(ob, *args, **kw):
             u'No translation in language "%s" was found of '
             'the target %s' % (lang, kw['target_path']))
         return err
-    if not IBaseFolder.providedBy(target):
+    if not IFolderish.providedBy(target):
         err.append(
             u'The target object is not folderish - pasting is '
             'not possible.')
