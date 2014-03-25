@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.1.2 (unreleased)
+0.1.2 (2014-03-25)
 ------------------
 
 - Use generic IFolderish interface, not an Archetypes-specific one
